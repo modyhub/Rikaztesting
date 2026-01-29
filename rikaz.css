@@ -1,0 +1,808 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Noto Naskh Arabic', 'IBM Plex Arabic', sans-serif;
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                padding: 0 2rem;
+                max-width: 1280px;
+            }
+        }
+        .menu-toggle {
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #1B4D3E;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+        /* Header Styles */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: #FFFFFF;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-title {
+            font-size: 1.875rem;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            color: #1B4D3E;
+        }
+
+        .logo-subtitle {
+            font-size: 0.875rem;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            color: #666666;
+        }
+
+        nav a {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            color: #1B4D3E;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #D4AF37;
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                height: 600px;
+            }
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-text {
+            max-width: 42rem;
+            padding: 0 1rem;
+        }
+
+        .hero-verse {
+            font-size: 1.25rem;
+            font-family: 'Amiri', serif;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        @media (min-width: 768px) {
+            .hero-verse {
+                font-size: 1.5rem;
+            }
+        }
+
+        .hero-title {
+            font-size: 2.25rem;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.125rem;
+            font-family: 'Noto Naskh Arabic', 'IBM Plex Arabic', sans-serif;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        @media (min-width: 768px) {
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background-color: #1B4D3E;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            font-size: 1.125rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: #2D6A56;
+        }
+
+        .btn-primary:active {
+            transform: scale(0.95);
+        }
+
+        .btn-secondary {
+            background-color: #D4AF37;
+            color: #1A1A1A;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-secondary:hover {
+            background-color: #E5C158;
+        }
+
+        .btn-secondary:active {
+            transform: scale(0.95);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 0;
+        }
+
+        @media (min-width: 768px) {
+            section {
+                padding: 6rem 0;
+            }
+        }
+
+        .section-title {
+            font-size: 1.875rem;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            color: #1B4D3E;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 2.25rem;
+            }
+        }
+
+        .divider {
+            width: 5rem;
+            height: 0.25rem;
+            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+            margin: 0 auto 3rem;
+            border-radius: 9999px;
+        }
+
+        /* Courses Section */
+        .courses-section {
+            background-color: #FFFFFF;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .course-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .course-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+            border-color: #D4AF37;
+        }
+
+        .course-icon {
+            font-size: 3.125rem;
+            margin-bottom: 1rem;
+        }
+
+        .course-title {
+            font-size: 1.25rem;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            color: #1B4D3E;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-description {
+            font-family: 'Noto Naskh Arabic', 'IBM Plex Arabic', sans-serif;
+            font-weight: 400;
+            color: #666666;
+            line-height: 1.8;
+        }
+
+        /* Features Section */
+        .features-section {
+            background-color: #F5F5F5;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            color: #1B4D3E;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-description {
+            font-family: 'Noto Naskh Arabic', 'IBM Plex Arabic', sans-serif;
+            font-weight: 400;
+            color: #666666;
+            line-height: 1.8;
+        }
+
+        /* Teachers Section */
+        .teachers-section {
+            background-color: #FFFFFF;
+        }
+
+        .teachers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .teacher-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .teacher-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+
+        .teacher-image {
+            font-size: 3.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .teacher-name {
+            font-size: 1.25rem;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            color: #1B4D3E;
+            margin-bottom: 0.5rem;
+        }
+
+        .teacher-specialty {
+            font-family: 'Noto Naskh Arabic', 'IBM Plex Arabic', sans-serif;
+            font-weight: 400;
+            color: #D4AF37;
+        }
+
+        /* Reviews Section */
+        .reviews-section {
+            background-color: #F5F5F5;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .review-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .review-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+
+        .stars {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .star {
+            color: #D4AF37;
+            font-size: 1.25rem;
+        }
+
+        .review-text {
+            font-family: 'Noto Naskh Arabic', 'IBM Plex Arabic', sans-serif;
+            font-weight: 400;
+            color: #666666;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .review-name {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            color: #1B4D3E;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: #1B4D3E;
+            color: white;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 42rem;
+            margin: 0 auto 3rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            width: 2rem;
+            height: 2rem;
+            color: #D4AF37;
+            flex-shrink: 0;
+        }
+
+        .contact-label {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-link {
+            font-family: 'Noto Naskh Arabic', 'IBM Plex Arabic', sans-serif;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: #D4AF37;
+        }
+
+        /* Contact Form */
+        .contact-form-wrapper {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            max-width: 42rem;
+            margin: 0 auto 3rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            font-family: 'Noto Naskh Arabic', 'IBM Plex Arabic', sans-serif;
+            font-weight: 400;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-input::placeholder,
+        .form-textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #D4AF37;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .telegram-link {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #D4AF37;
+            color: #1B4D3E;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .telegram-link:hover {
+            background-color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0D2622;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-text {
+            font-family: 'Noto Naskh Arabic', 'IBM Plex Arabic', sans-serif;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-subtitle {
+            color: #D4AF37;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+        }  
+        
+
+/* NEW PACKET */
+
+ /* Religious Packages Custom Styles with Unique Prefixes */
+        .rel-pkg-section {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+        }
+        
+        .rel-pkg-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .rel-pkg-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .rel-pkg-title {
+            font-family: 'Cairo', sans-serif;
+            font-size: 2.5rem;
+            color: #1b5e20;
+            margin-bottom: 10px;
+        }
+        
+        .rel-pkg-subtitle {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .rel-pkg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .rel-pkg-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .rel-pkg-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .rel-pkg-card-header {
+            padding: 25px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        /* Dynamic Colors for Headers */
+        .rel-pkg-card:nth-child(1) .rel-pkg-card-header { background: linear-gradient(to right, #2e7d32, #43a047); }
+        .rel-pkg-card:nth-child(2) .rel-pkg-card-header { background: linear-gradient(to right, #c6a700, #fbc02d); }
+        .rel-pkg-card:nth-child(3) .rel-pkg-card-header { background: linear-gradient(to right, #00796b, #009688); }
+        .rel-pkg-card:nth-child(4) .rel-pkg-card-header { background: linear-gradient(to right, #5d4037, #795548); }
+        .rel-pkg-card:nth-child(5) .rel-pkg-card-header { background: linear-gradient(to right, #bf360c, #e64a19); }
+        
+        .rel-pkg-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        
+        .rel-pkg-name {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .rel-pkg-price {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        
+        .rel-pkg-price span {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .rel-pkg-img-box {
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .rel-pkg-img-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .rel-pkg-body {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .rel-pkg-features {
+            list-style: none;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .rel-pkg-features li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            position: relative;
+            padding-right: 25px;
+            font-size: 0.95rem;
+        }
+        
+        .rel-pkg-features li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 0;
+            color: #2e7d32;
+        }
+        
+        .rel-pkg-features li.rel-pkg-unavailable:before {
+            content: "\f00d";
+            color: #e74c3c;
+        }
+        
+        .rel-pkg-select-group {
+            margin-bottom: 20px;
+        }
+        
+        .rel-pkg-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .rel-pkg-select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background: #f9f9f9;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .rel-pkg-whatsapp-btn {
+            display: flex;
+            width: 100%;
+            padding: 14px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s;
+        }
+        
+        .rel-pkg-whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+        
+        .rel-pkg-badge {
+            position: absolute;
+            top: 10px;
+            left: -30px;
+            background-color: #d32f2f;
+            color: white;
+            padding: 5px 30px;
+            transform: rotate(-45deg);
+            font-weight: bold;
+            font-size: 0.8rem;
+            z-index: 1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        } 

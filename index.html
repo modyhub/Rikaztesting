@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ركاز القرآن - منصة تعليم القرآن واللغة العربية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;600;700&family=IBM+Plex+Arabic:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rikaz.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav class="container">
+    <div class="logo-section">
+        <div class="logo-title">ركاز</div>
+        <div class="logo-subtitle">منصة القرآن</div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#home">الرئيسية</a>
+        <a href="#teachers">المدرّسين</a>
+        <a href="#how">كيف تعمل</a>
+        <a href="#courses">الباقات</a>
+        <a href="#contact">تواصل معنا</a>
+    </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="quran.png" alt="القرآن الكريم" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-verse">"إِنَّ هَٰذَا الْقُرْآنَ يَهْدِي لِلَّتِي هِيَ أَقْوَمُ"</p>
+                <h1 class="hero-title">ركاز القرآن</h1>
+                <p class="hero-subtitle">منصة متخصصة لتعليم القرآن الكريم واللغة العربية</p>
+                <a href="#rel-packages" id="start-link">
+                    <button class="btn-primary">ابدأ رحلتك الآن</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MY NEW PACKETS -->
+      <!-- Religious Packages Section (Merged) -->
+    <section id="rel-packages" class="rel-pkg-section" >
+        <div class="rel-pkg-container" >
+            <div class="rel-pkg-header">
+                <h2 class="rel-pkg-title">باقاتنا التعليمية</h2>
+                <p class="rel-pkg-subtitle">اختر الخطة المناسبة لرحلتك في رحاب القرآن الكريم والعلوم الشرعية</p>
+            </div>
+            <div class="rel-pkg-grid" id="relPkgContainer">
+                <!-- Dynamic Content via JS -->
+            </div>
+        </div>
+    </section>
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2 class="section-title">الدورات التي نقدمها</h2>
+            <div class="divider"></div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">📖</div>
+                    <h3 class="course-title">تحفيظ قرآن كريم</h3>
+                    <p class="course-description">برنامج متخصص لتحفيظ القرآن الكريم مع أفضل المحفظين</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">✨</div>
+                    <h3 class="course-title">ضبط وإتقان</h3>
+                    <p class="course-description">دورات لضبط التلاوة وإتقان أحكام التجويد</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🏆</div>
+                    <h3 class="course-title">إجازات بالأسانيد</h3>
+                    <p class="course-description">برامج الإجازة بالأسانيد المتصلة برسول الله</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">📚</div>
+                    <h3 class="course-title">دورات المتون العلمية</h3>
+                    <p class="course-description">دراسة المتون الإسلامية والعلوم الشرعية</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🗣️</div>
+                    <h3 class="course-title">تعليم اللغة العربية</h3>
+                    <p class="course-description">قراءة وكتابة ومحادثة في اللغة العربية الفصحى</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">👩‍🏫</div>
+                    <h3 class="course-title">برامج إعداد المعلمات</h3>
+                    <p class="course-description">تدريب متخصص لإعداد معلمات القرآن واللغة العربية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- packets section  -->
+    
+    <!-- Features Section -->
+    <section id="how" class="features-section">
+        <div class="container">
+            <h2 class="section-title">مميزات المنصة</h2>
+            <div class="divider"></div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <div>
+                        <h3 class="feature-title">تعلم عن بعد</h3>
+                        <p class="feature-description">منصة تفاعلية توفر التعليم من أي مكان وأي وقت</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⏰</div>
+                    <div>
+                        <h3 class="feature-title">مواعيد مرنة</h3>
+                        <p class="feature-description">اختر أوقات الدراسة التي تناسب جدولك الزمني</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <div>
+                        <h3 class="feature-title">متابعة شخصية</h3>
+                        <p class="feature-description">متابعة مستمرة من المعلمين المتخصصين</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <div>
+                        <h3 class="feature-title">تقييمات دورية</h3>
+                        <p class="feature-description">تقييمات منتظمة لقياس التقدم والتطور</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="teachers-section">
+        <div class="container">
+            <h2 class="section-title">قسم المدرّسين</h2>
+            <div class="divider"></div>
+            <div class="teachers-grid">
+                   <div class="teacher-card">
+                    <div class="teacher-image">👳🏻‍♂️</div>
+                    <h3 class="teacher-name"> الشيخ أحمد أبو قيس</h3>
+                    <p class="teacher-specialty"></p>
+                </div>
+                   <div class="teacher-card">
+                    <div class="teacher-image">👳🏻‍♂️</div>
+                    <h3 class="teacher-name">الشيخ عبد العزيز شلاش  </h3>
+                    <p class="teacher-specialty"></p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">🧕🏻</div>
+                    <h3 class="teacher-name">المعلمة صفاء شلاش  </h3>
+                    <p class="teacher-specialty"></p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">🧕🏻</div>
+                    <h3 class="teacher-name">المعلمة مريم مطير </h3>
+                    <p class="teacher-specialty"></p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">🧕🏻</div>
+                    <h3 class="teacher-name">المعلمة هبة سليك</h3>
+                    <p class="teacher-specialty"></p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">🧕🏻</div>
+                    <h3 class="teacher-name">المعلمة صفاء وليد</h3>
+                    <p class="teacher-specialty"></p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">🧕🏻</div>
+                    <h3 class="teacher-name">المعلمة فاطمة شلاش</h3>
+                    <p class="teacher-specialty"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">آراء الطلاب</h2>
+            <div class="divider"></div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="review-text">"منصة رائعة جداً، تعلمت الكثير من خلالها والمعلمون متخصصون وودودون"</p>
+                    <p class="review-name">سارة محمد</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="review-text">"أفضل منصة لتعليم القرآن، مواعيد مرنة وجودة عالية جداً"</p>
+                    <p class="review-name">علي أحمد</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="review-text">"تجربة تعليمية رائعة، أنصح الجميع بالانضمام"</p>
+                    <p class="review-name">ليلى إبراهيم</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <div class="divider"></div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <div class="contact-label">البريد الإلكتروني</div>
+                        <a href="mailto:safashlash12@gmail.com" class="contact-link">safashlash12@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <div class="contact-label">رقم الهاتف</div>
+                        <a href="tel:0963996841921" class="contact-link">0963996841921</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="بريدك الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-textarea" placeholder="رسالتك" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-secondary">إرسال الرسالة</button>
+                </form>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-family: 'Tajawal', sans-serif; font-weight: 700; margin-bottom: 1rem;">تابعنا على</p>
+                <a href="https://t.me/+reCWUz66lY04YWM8" target="_blank" rel="noopener noreferrer" class="telegram-link">قناة التيليجرام</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-text">© 2026 ركاز القرآن. جميع الحقوق محفوظة</p>
+            <p class="footer-text footer-subtitle">منصة متخصصة لتعليم القرآن الكريم واللغة العربية</p>
+        </div>
+    </footer>
+</body> 
+<script src="rikaz.js"></script>
+</html>
