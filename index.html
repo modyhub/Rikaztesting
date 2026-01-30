@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;600;700&family=IBM+Plex+Arabic:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="rikaz.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -136,56 +139,144 @@
             </div>
         </div>
     </section>
-
-    <!-- Teachers Section -->
-    <section id="teachers" class="teachers-section">
-        <div class="container">
+ 
+    <!-- Teachers -->
+    <div class="teachers-section">
+        <div class="container">    
             <h2 class="section-title">قسم المدرّسين</h2>
-            <div class="divider"></div>
+    <div class="divider"></div>
             <div class="teachers-grid">
-                   <div class="teacher-card">
-                    <div class="teacher-image">👳🏻‍♂️</div>
-                    <h3 class="teacher-name"> الشيخ أحمد أبو قيس</h3>
-                    <p class="teacher-specialty"></p>
-                </div>
-                   <div class="teacher-card">
-                    <div class="teacher-image">👳🏻‍♂️</div>
-                    <h3 class="teacher-name">الشيخ عبد العزيز شلاش  </h3>
-                    <p class="teacher-specialty"></p>
-                </div>
+                <!-- Teacher 1 -->
                 <div class="teacher-card">
-                    <div class="teacher-image">👳🏻‍♂️</div>
-                    <h3 class="teacher-name"> الشيخ محمد رشيد المسدي</h3>
-                    <p class="teacher-specialty"></p>
+                    <div class="teacher-image">
+                        <img src="ahmedabokayis.jpeg" alt="الشيخ أحمد أبو قيس">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>الشيخ أحمد أبو قيس</h3>
+                        <p>مجاز في قراءة القرآن الكريم</p>
+                    </div>
+                    <button class="whatsapp-btn" onclick="openWhatsApp('الشيخ أحمد أبو قيس')">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
                 </div>
+
+                <!-- Teacher 2 -->
                 <div class="teacher-card">
-                    <div class="teacher-image">🧕🏻</div>
-                    <h3 class="teacher-name">المعلمة صفاء شلاش  </h3>
-                    <p class="teacher-specialty"></p>
+                    <div class="teacher-image">
+                        <img src="sheikh.jpg.jpeg" alt="الشيخ عبد العزيز شلاش">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>الشيخ عبد العزيز شلاش</h3>
+                        <p>مجاز في قراءة القرآن الكريم</p>
+                    </div>
+                    <button class="whatsapp-btn" onclick="openWhatsApp('الشيخ عبد العزيز شلاش')">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
                 </div>
+
+                <!-- Teacher 3 -->
                 <div class="teacher-card">
-                    <div class="teacher-image">🧕🏻</div>
-                    <h3 class="teacher-name">المعلمة مريم مطير </h3>
-                    <p class="teacher-specialty"></p>
+                    <div class="teacher-image">
+                        <img src="Screenshot 2026-01-30 194724.png" alt="الشيخ محمد رشيد المسدي">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>الشيخ محمد رشيد المسدي</h3>
+                        <p>مجاز في قراءة القرآن الكريم</p>
+                    </div>
+                    <button class="whatsapp-btn" onclick="openWhatsApp('الشيخ محمد رشيد المسدي')">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
                 </div>
+
+                <!-- Teacher 4 -->
                 <div class="teacher-card">
-                    <div class="teacher-image">🧕🏻</div>
-                    <h3 class="teacher-name">المعلمة هبة سليك</h3>
-                    <p class="teacher-specialty"></p>
+                    <div class="teacher-image">
+                        <img src="teacher-female.png" alt="المعلمة صفاء شلاش">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>المعلمة صفاء شلاش</h3>
+                        <p>مجازة في قراءة القرآن الكريم</p>
+                    </div>
+                    <button class="whatsapp-btn" onclick="openWhatsApp('المعلمة صفاء شلاش')">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
                 </div>
+
+                <!-- Teacher 5 -->
                 <div class="teacher-card">
-                    <div class="teacher-image">🧕🏻</div>
-                    <h3 class="teacher-name">المعلمة صفاء وليد</h3>
-                    <p class="teacher-specialty"></p>
+                    <div class="teacher-image">
+                        <img src="teacher-female.png" alt="المعلمة مريم مطير">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>المعلمة مريم مطير</h3>
+                        <p>مجازة في قراءة القرآن الكريم</p>
+                    </div>
+                    <button class="whatsapp-btn" onclick="openWhatsApp('المعلمة مريم مطير')">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
                 </div>
+
+                <!-- Teacher 6 -->
                 <div class="teacher-card">
-                    <div class="teacher-image">🧕🏻</div>
-                    <h3 class="teacher-name">المعلمة فاطمة شلاش</h3>
-                    <p class="teacher-specialty"></p>
+                    <div class="teacher-image">
+                        <img src="teacher-female.png" alt="المعلمة هبة سليك">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>المعلمة هبة سليك</h3>
+                        <p>مجازة في قراءة القرآن الكريم</p>
+                    </div>
+                    <button class="whatsapp-btn" onclick="openWhatsApp('المعلمة هبة سليك')">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Teacher 7 -->
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="teacher-female.png" alt="المعلمة صفاء وليد">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>المعلمة صفاء حمزة</h3>
+                        <p>مجازة في قراءة القرآن الكريم</p>
+                    </div>
+                    <button class="whatsapp-btn" onclick="openWhatsApp('المعلمة صفاء وليد')">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Teacher 8 -->
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="teacher-female.png" alt="المعلمة فاطمة شلاش">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>المعلمة فاطمة شلاش</h3>
+                        <p>مجازة في قراءة القرآن الكريم</p>
+                    </div>
+                    <button class="whatsapp-btn" onclick="openWhatsApp('المعلمة فاطمة شلاش')">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+            </div>  
+        </div>  
+</section>  
 
     <!-- Reviews Section -->
     <section class="reviews-section">
@@ -231,26 +322,39 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
+    <section id="contact"  class="contact-section">
+        <div class="container"  >
             <h2 class="section-title">تواصل معنا</h2>
             <div class="divider"></div>
 
             <div class="contact-info">
                 <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <div>
-                        <div class="contact-label">البريد الإلكتروني</div>
-                        <a href="mailto:rikaz.acadamy@gmil.com" class="contact-link">rikaz.acadamy@gmil.com</a>
-                    </div>
-                </div>
-                <div class="contact-item">
                     <div class="contact-icon">📞</div>
                     <div>
                         <div class="contact-label">رقم الهاتف</div>
-                        <a href="tel:0963996841921" class="contact-link">+963996841921</a>
+                        <a href="tel:0963996841921" class="contact-link" dir="ltr" lang="ar">
+                        +963 996 841 921</a>
                     </div>
+                        </div>
+                        <div class="contact-item">
+                <div class="contact-icon">💬</div>
+                <div>
+                    <div class="contact-label">واتساب</div>
+                    <a
+                        href="https://wa.me/963996841921"
+                        target="_blank"
+                        class="contact-link"
+                        dir="ltr"
+                    >
+                        +963 996 841 921
+                    </a>
                 </div>
+                
+                    <div class="contact-label">شام كاش</div>
+                    <div>
+                        <img src="qrcode.png" alt="QR Code" class="qr-code">
+                    </div>
+            </div>
             </div>
 
             <div class="contact-form-wrapper">
