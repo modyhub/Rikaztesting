@@ -194,7 +194,7 @@ const relPackagesData = [
   },
   {
     id: 13,
-    title: "حلقة جماعية للتفسير والتدبر",
+    title: "حلقة تفسير وتدبُّر جزء عمّ",
     price: 40,
     currency: "دولار",
     period: "شهر ونصف",
@@ -207,7 +207,134 @@ const relPackagesData = [
     unavailable: [],
     options: [],
     badge: ""
-  }
+  },
+  {
+  id: 14,
+  title: "مشروع الحافظ الصغير",
+  price: 50,
+  currency: "دولار",
+  period: "حتى 3 سنوات",
+  icon: "fas fa-quran",
+  backgroundImage: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
+  overlay: "rgba(13, 46, 28, 0.75)",
+  textColor: "#ffffff",
+  imageText: "الحافظ الصغير",
+  features: [
+    "تحفيظ القرآن بطرق ابتكارية",
+    "حلقة جماعية",
+    "مدة الحلقة ساعتين",
+    "5–6 حلقات",
+    "الدفع على دفعات"
+  ],
+  unavailable: [],
+  options: [],
+  badge: ""
+},
+{
+  id: 15,
+  title: "مشروع حملة القرآن",
+  price: 50,
+  currency: "دولار / شهريًا",
+  period: "سنة ونصف",
+  icon: "fas fa-book-open",
+  backgroundImage: "https://images.unsplash.com/photo-1590086782792-42dd2350140d",
+  overlay: "rgba(13, 46, 28, 0.75)",
+  textColor: "#ffffff",
+  imageText: "حملة القرآن",
+  features: [
+    "العمر 6–12 سنة",
+    "حلقة جماعية",
+    "مدة الحلقة ساعتين ونصف",
+    "5–6 حلقات",
+    "الدفع السنوي على دفعات"
+  ],
+  unavailable: [],
+  options: [],
+  badge: ""
+},
+{
+  id: 16,
+  title: "مشروع حروف النور",
+  price: 35,
+  currency: "دولار / شهريًا",
+  period: "3 أشهر",
+  icon: "fas fa-font",
+  backgroundImage: "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1",
+  overlay: "rgba(13, 46, 28, 0.75)",
+  textColor: "#ffffff",
+  imageText: "حروف النور",
+  features: [
+    "تعليم القراءة والكتابة",
+    "العمر 3–10 سنوات",
+    "حلقة جماعية",
+    "مدة الحلقة ساعة ونصف"
+  ],
+  unavailable: [],
+  options: [],
+  badge: ""
+},
+{
+  id: 17,
+  title: "مشروع كوني مربية ناجحة",
+  price: 200,
+  currency: "دولار",
+  period: "شهرين ونصف لكل دورة",
+  icon: "fas fa-chalkboard-teacher",
+  backgroundImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
+  overlay: "rgba(13, 46, 28, 0.75)",
+  textColor: "#ffffff",
+  imageText: "كوني مربية ناجحة",
+  features: [
+    "تربية الطفل تحت 6 سنوات",
+    "الأساليب التربوية وفق السيرة",
+    "كيف أكون قدوة",
+    "غرس القيم النافعة"
+  ],
+  unavailable: [],
+  options: [],
+  badge: ""
+},
+{
+  id: 18,
+  title: "دورة مخارج الحروف والصفات",
+  price: 130,
+  currency: "دولار",
+  period: "شهرين ونصف",
+  icon: "fas fa-microphone",
+  backgroundImage: "https://images.unsplash.com/photo-1519682337058-a94d519337bc",
+  overlay: "rgba(13, 46, 28, 0.75)",
+  textColor: "#ffffff",
+  imageText: "مخارج الحروف",
+  features: [
+    "شرح نظري وتطبيق عملي",
+    "تصحيح نطق الحروف كاملًا",
+    "تدريب مباشر صوت وصورة"
+  ],
+  unavailable: [],
+  options: [],
+  badge: ""
+},
+{
+  id: 19,
+  title: "المسابقة القرآنية الرمضانية",
+  price: 50,
+  currency: "دولار",
+  period: "شهر (رمضان)",
+  icon: "fas fa-trophy",
+  backgroundImage: "https://images.unsplash.com/photo-1585036156171-384164a8c675",
+  overlay: "rgba(13, 46, 28, 0.75)",
+  textColor: "#ffffff",
+  imageText: "مسابقة رمضانية",
+  features: [
+    "حفظ سورة البقرة خلال شهر",
+    "حلقة جماعية",
+    "ذكور + إناث",
+    "هدايا ومكافآت مالية للأوائل"
+  ],
+  unavailable: [],
+  options: [],
+  badge: "رمضان"
+}
 ];
 
         const relWhatsappNum = "+963996841921"; // تم استخدام رقمك الموجود في الكود
@@ -265,4 +392,11 @@ const relPackagesData = [
 
         function toggleMenu() {
                         document.getElementById("navLinks").classList.toggle("active");
-                        };
+                        }; 
+
+function openWhatsApp(teacherName) {
+    const message = `السلام عليكم اريد الاشتراك مع الاستاذ ${teacherName}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${relWhatsappNum}?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+}
