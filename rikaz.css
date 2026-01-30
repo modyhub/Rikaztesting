@@ -609,200 +609,217 @@
 /* NEW PACKET */
 
  /* Religious Packages Custom Styles with Unique Prefixes */
-        .rel-pkg-section {
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
-        }
-        
-        .rel-pkg-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .rel-pkg-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .rel-pkg-title {
-            font-family: 'Cairo', sans-serif;
-            font-size: 2.5rem;
-            color: #1b5e20;
-            margin-bottom: 10px;
-        }
-        
-        .rel-pkg-subtitle {
-            font-family: 'Tajawal', sans-serif;
-            font-size: 1.1rem;
-            color: #555;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .rel-pkg-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .rel-pkg-card {
-            background-color: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .rel-pkg-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
-        
-        .rel-pkg-card-header {
-            padding: 25px;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-        
-        /* Dynamic Colors for Headers */
-        .rel-pkg-card:nth-child(1) .rel-pkg-card-header { background: linear-gradient(to right, #2e7d32, #43a047); }
-        .rel-pkg-card:nth-child(2) .rel-pkg-card-header { background: linear-gradient(to right, #c6a700, #fbc02d); }
-        .rel-pkg-card:nth-child(3) .rel-pkg-card-header { background: linear-gradient(to right, #00796b, #009688); }
-        .rel-pkg-card:nth-child(4) .rel-pkg-card-header { background: linear-gradient(to right, #5d4037, #795548); }
-        .rel-pkg-card:nth-child(5) .rel-pkg-card-header { background: linear-gradient(to right, #bf360c, #e64a19); }
-        
-        .rel-pkg-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            display: inline-block;
-        }
-        
-        .rel-pkg-name {
-            font-family: 'Cairo', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-        
-        .rel-pkg-price {
-            font-size: 2rem;
-            font-weight: 800;
-        }
-        
-        .rel-pkg-price span {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-        
-        .rel-pkg-img-box {
-            height: 160px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        
-        .rel-pkg-img-overlay {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-weight: bold;
-            text-align: center;
-            padding: 10px;
-        }
-        
-        .rel-pkg-body {
-            padding: 25px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .rel-pkg-features {
-            list-style: none;
-            margin-bottom: 20px;
-            flex-grow: 1;
-        }
-        
-        .rel-pkg-features li {
-            padding: 8px 0;
-            border-bottom: 1px dashed #eee;
-            position: relative;
-            padding-right: 25px;
-            font-size: 0.95rem;
-        }
-        
-        .rel-pkg-features li:before {
-            content: "\f00c";
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            position: absolute;
-            right: 0;
-            color: #2e7d32;
-        }
-        
-        .rel-pkg-features li.rel-pkg-unavailable:before {
-            content: "\f00d";
-            color: #e74c3c;
-        }
-        
-        .rel-pkg-select-group {
-            margin-bottom: 20px;
-        }
-        
-        .rel-pkg-label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 600;
-            color: #666;
-            font-size: 0.9rem;
-        }
-        
-        .rel-pkg-select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            background: #f9f9f9;
-            font-family: 'Tajawal', sans-serif;
-        }
-        
-        .rel-pkg-whatsapp-btn {
-            display: flex;
-            width: 100%;
-            padding: 14px;
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 700;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            transition: background 0.3s;
-        }
-        
-        .rel-pkg-whatsapp-btn:hover {
-            background-color: #128C7E;
-        }
-        
-        .rel-pkg-badge {
-            position: absolute;
-            top: 10px;
-            left: -30px;
-            background-color: #d32f2f;
-            color: white;
-            padding: 5px 30px;
-            transform: rotate(-45deg);
-            font-weight: bold;
-            font-size: 0.8rem;
-            z-index: 1;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        } 
+        /* Religious Packages Custom Styles with Unique Prefixes */
+.rel-pkg-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+}
+
+.rel-pkg-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rel-pkg-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.rel-pkg-title {
+    font-family: 'Cairo', sans-serif;
+    font-size: 2.5rem;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.rel-pkg-subtitle {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.rel-pkg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.rel-pkg-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.rel-pkg-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.rel-pkg-card-header {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* إزالة الألوان الثابتة واستبدالها بالتالية: */
+.rel-pkg-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: white;
+}
+
+.rel-pkg-name {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.rel-pkg-price {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.rel-pkg-price span {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.rel-pkg-img-box {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.rel-pkg-img-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.rel-pkg-body {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rel-pkg-features {
+    list-style: none;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.rel-pkg-features li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    position: relative;
+    padding-right: 25px;
+    font-size: 0.95rem;
+}
+
+.rel-pkg-features li:before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    color: #2e7d32;
+}
+
+.rel-pkg-features li.rel-pkg-unavailable:before {
+    content: "\f00d";
+    color: #e74c3c;
+}
+
+.rel-pkg-select-group {
+    margin-bottom: 20px;
+}
+
+.rel-pkg-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.rel-pkg-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #f9f9f9;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.rel-pkg-whatsapp-btn {
+    display: flex;
+    width: 100%;
+    padding: 14px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.rel-pkg-whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+.rel-pkg-badge {
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    background-color: #d32f2f;
+    color: white;
+    padding: 5px 30px;
+    transform: rotate(-45deg);
+    font-weight: bold;
+    font-size: 0.8rem;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* ألوان النص يجب تطبيقها مباشرة من البيانات */
+.rel-pkg-card-header {
+    background: var(--header-overlay, linear-gradient(to right, white, #43a047));
+}
+
+.rel-pkg-name,
+.rel-pkg-price {
+    color: var(--text-color, #ffffff);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* تطبيق خاص للبطاقات ذات الخلفية البيضاء */
+.rel-pkg-card.header-light .rel-pkg-name,
+.rel-pkg-card.header-light .rel-pkg-price {
+    color: white !important;
+    text-shadow: none;
+}
