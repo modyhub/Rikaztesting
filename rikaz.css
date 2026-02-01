@@ -860,9 +860,24 @@
         
 
 /* NEW PACKET */
+.rel-pkg-header {
+    background: rgba(255, 255, 255, 0.75);  
+    padding: 20px 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+    backdrop-filter: blur(4px);  
+}
 
  /* Religious Packages Custom Styles with Unique Prefixes */
         /* Religious Packages Custom Styles with Unique Prefixes */
+        #rel-packages {
+    background-image: url("patern.png");
+    background-repeat: repeat;
+    background-size: 1100px; /* عدّل القياس حسب رغبتك */
+    }
+
 .rel-pkg-section {
     padding: 60px 20px;
     background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
