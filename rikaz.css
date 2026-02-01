@@ -13,6 +13,7 @@
             background-color: #FFFFFF;
             color: #1A1A1A;
             line-height: 1.6;
+            padding-top: 80px;
         }
 
         .container {
@@ -60,13 +61,53 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
         /* Header Styles */
-        header {
-            position: sticky;
+        header { 
             top: 0;
             z-index: 50;
             background-color: #FFFFFF;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
+               
+        header{
+            position: fixed; 
+            width: 100%;
+            z-index: 1000;
+            background: white; /* أو لون الهيدر عندك */
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+ 
+        header.nav-hidden{
+            transform: translateY(-100%);
+        }
+
+        header.nav-visible{
+            transform: translateY(0);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        /* اللوجو */
+        .logo-section{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;   /* padding عام */
+        }
+
+        .logo-img{
+            height: 45px;
+            width: auto;
+            padding: 4px;       
+            filter: brightness(0) invert(1);  
+        }.logo-img{  
+            filter: none;    
+        }
+
+        /* نص اللوجو */
+        .logo-subtitle{
+            font-size: 14px;
+            opacity: 0.85;
+        }
+
 
         nav {
             display: flex;
@@ -118,6 +159,25 @@
                 display: flex;
             }
         }
+        .logo-img{
+                height: 64px;   /* عدّل المقاس حسب اللوجو */
+                width: auto;
+                display: block;
+            }
+            .blended-logo{
+                height: 64px;
+                width: auto;
+
+                /* دمج مع ألوان الموقع */
+                filter: 
+                    brightness(0) invert(1)       /* يخليه أبيض */
+                    sepia(1) 
+                    hue-rotate(90deg)             /* أخضر */
+                    saturate(400%);
+
+                opacity: 0.95;
+            }
+
 
         /* Hero Section */
         .hero {
