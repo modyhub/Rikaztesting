@@ -400,3 +400,22 @@ function openWhatsApp(teacherName) {
     const whatsappUrl = `https://wa.me/${relWhatsappNum}?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
 }
+
+let lastScroll = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll && currentScroll > 120) {
+        // نزول
+        header.classList.add("nav-hidden");
+        header.classList.remove("nav-visible");
+    } else {
+        // صعود
+        header.classList.remove("nav-hidden");
+        header.classList.add("nav-visible");
+    }
+
+    lastScroll = currentScroll;
+});
