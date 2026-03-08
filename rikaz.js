@@ -3,9 +3,9 @@ const relPackagesData = [
   {
     id: 1,
     title: "دورة شرح التحفة",
-    price: 150,
+    price: 30,
     currency: "دولار",
-    period: "شهرين",
+    period: "شهريًا",
     icon: "fas fa-book",
     backgroundImage: "Altuhfaitkan.jpeg",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -19,7 +19,7 @@ const relPackagesData = [
   {
     id: 2,
     title: "دورة شرح الجزرية",
-    price: 275,
+    price: 75,
     currency: "دولار",
     period: "3 أشهر",
     icon: "fas fa-scroll",
@@ -51,9 +51,9 @@ const relPackagesData = [
   {
     id: 4,
     title: "دورة تأهيل معلمة رشيدي",
-    price: 300,
+    price: 50,
     currency: "دولار",
-    period: "شهرين",
+    period: "شهريًا",
     icon: "fas fa-chalkboard-teacher",
     backgroundImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663227563266/WaLztRHlUxCYsfUR.jpg",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -83,9 +83,9 @@ const relPackagesData = [
   {
     id: 6,
     title: "ختمة إجازة بالسند (مكثفة)",
-    price: 300,
+    price: 75,
     currency: "دولار",
-    period: "3 أشهر",
+    period: "شهريًا",
     icon: "fas fa-bolt",
     backgroundImage: "senadmutasill.png",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -99,9 +99,9 @@ const relPackagesData = [
   {
     id: 7,
     title: "حلقة الحفظ الغيبي",
-    price: 450,
+    price: 50,
     currency: "دولار",
-    period: "9 أشهر",
+    period: "شهريًا",
     icon: "fas fa-brain",
     backgroundImage: "ghaibisave.png",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -115,9 +115,9 @@ const relPackagesData = [
   {
     id: 8,
     title: "ختمة ضبط وإتقان",
-    price: 300,
+    price: 50,
     currency: "دولار",
-    period: "6 أشهر",
+    period: "شهريًا",
     icon: "fas fa-quran",
     backgroundImage: "khitmaDatit.png",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -131,9 +131,9 @@ const relPackagesData = [
   {
     id: 9,
     title: "دورة جزء عمّ وتبارك",
-    price: 130,
+    price: 30,
     currency: "دولار",
-    period: "3 أشهر",
+    period: "شهريًا",
     icon: "fas fa-child",
     backgroundImage: "tabarakAndammaa.png",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -147,9 +147,9 @@ const relPackagesData = [
   {
     id: 10,
     title: "دورة جزء عمّ",
-    price: 100,
+    price: 25,
     currency: "دولار",
-    period: "شهرين",
+    period: "شهريًا",
     icon: "fas fa-baby",
     backgroundImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663227563266/ZGxsujpEuMvEbvRN.jpg",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -163,9 +163,9 @@ const relPackagesData = [
   {
     id: 11,
     title: "دورة الرشيدي قراءة وكتابة",
-    price: 150,
+    price: 30,
     currency: "دولار",
-    period: "3 أشهر",
+    period: "شهريًا",
     icon: "fas fa-language",
     backgroundImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663227563266/hsFXrDENFAOurcdO.jpg",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -179,9 +179,9 @@ const relPackagesData = [
   {
     id: 12,
     title: "حلقة جماعية لتعليم العربية",
-    price: 75,
+    price: 15,
     currency: "دولار",
-    period: "3 أشهر",
+    period: "شهريًا",
     icon: "fas fa-users",
     backgroundImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663227563266/rRzpTLpJsjWFcqXA.jpg",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -276,7 +276,7 @@ const relPackagesData = [
 {
   id: 17,
   title: "مشروع كوني مربية ناجحة",
-  price: 200,
+  price: 100,
   currency: "دولار",
   period: "شهرين ونصف لكل دورة",
   icon: "fas fa-chalkboard-teacher",
@@ -297,9 +297,9 @@ const relPackagesData = [
 {
   id: 18,
   title: "دورة مخارج الحروف والصفات",
-  price: 130,
+  price: 50,
   currency: "دولار",
-  period: "شهرين ونصف",
+  period: "شهريًا",
   icon: "fas fa-microphone",
   backgroundImage: "makherijalhurufsabaashar.png",
   overlay: "rgba(13, 46, 28, 0.75)",
@@ -337,7 +337,7 @@ const relPackagesData = [
 }
 ];
 
-        const relWhatsappNum = "+963996841921"; // تم استخدام رقمك الموجود في الكود
+        const relWhatsappNum = "+905340444885"; // تم استخدام رقمك الموجود في الكود
         document.addEventListener('DOMContentLoaded', function() {
             const container = document.getElementById('relPkgContainer');
             
