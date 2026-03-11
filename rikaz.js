@@ -35,9 +35,9 @@ const relPackagesData = [
   {
     id: 3,
     title: "دورة محو الأمية",
-    price: 350,
+    price: 35,
     currency: "دولار",
-    period: "6 أشهر",
+    period: "شهريًا",
     icon: "fas fa-pen",
     backgroundImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663227563266/iCqBJLKHedBeadFO.jpg",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -67,9 +67,9 @@ const relPackagesData = [
   {
     id: 5,
     title: "ختمة إجازة بالسند",
-    price: 450,
+    price: 50,
     currency: "دولار",
-    period: "9 أشهر",
+    period: "شهريًا",
     icon: "fas fa-certificate",
     backgroundImage: "senadmutasill.png",
     overlay: "rgba(13, 46, 28, 0.75)",
@@ -419,3 +419,4 @@ window.addEventListener("scroll", () => {
 
     lastScroll = currentScroll;
 });
+
